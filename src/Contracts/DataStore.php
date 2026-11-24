@@ -2,13 +2,8 @@
 declare(strict_types=1);
 namespace App\Contracts;
 
-/**
- * The ONLY thing the logic layer knows about storage.
- * Esheng (DB) implements this interface (e.g. MySqlStore) - no logic code changes needed.
- *
- * Bin arrays must contain: id, bin_code, sensor_id, block_id, block_name, latitude, longitude,
- * empty_distance_cm, fill_percent, battery_percent, status ('ok'|'needs_collection'|'fault'), last_reading_at
- */
+// Temporary Database can replace later :3
+
 interface DataStore
 {
     // --- API keys ---

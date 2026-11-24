@@ -4,7 +4,7 @@ namespace App\Storage;
 
 use App\Contracts\DataStore;
 
-/** Temporary stand-in so the logic can run/test with no database. Not for production. */
+/** Temporary stand-in so the logic can run/test with no database. Just for testing will remove later on. */
 final class JsonFileStore implements DataStore
 {
     private string $file;
